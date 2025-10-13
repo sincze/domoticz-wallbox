@@ -4,7 +4,7 @@
 # Mods: sincze
 #
 """
-<plugin key="Wallbox" name="Wallbox" author="lokonli" version="0.0.5" wikilink="https://github.com/lokonli/domoticz-wallbox" externallink="https://github.com/lokonli/domoticz-wallbox">
+<plugin key="Wallbox" name="Wallbox" author="lokonli" version="1.0.0" wikilink="https://github.com/lokonli/domoticz-wallbox" externallink="https://github.com/lokonli/domoticz-wallbox">
     <description>
         <h2>Wallbox plugin for Domoticz</h2><br/>
         <h3>Features</h3>
@@ -96,7 +96,7 @@ class WallboxPlugin:
 
     def __init__(self):
         self.messageQueue = queue.Queue()
-        self.countDownInit = 3         # Update devices every countDownInit * 10 seconds
+        self.countDownInit = 7         # Update devices every countDownInit * 10 seconds
         self.chargerList = []
         self.countDown = 1
         self.lastValue = 0
